@@ -1,8 +1,9 @@
-module processor(input logic clk, reset, input[3:0] btn, output logic[15:0]  pc, output logic [23:0]inst, result, 
-						output logic [39:0] data, output logic enable);
+module processor(input logic clk, reset, input[3:0] btn, output logic[15:0]  pc, output logic [23:0]inst,output logic [47:0] result, 
+						output logic [63:0] data, output logic enable);
 
 	
-	logic [23:0] instrD,rdMemData,memWD, outputDataForTxt, value;
+	logic [23:0] instrD;
+	logic [47:0] rdMemData,memWD, outputDataForTxt, value;
 	logic [15:0] A, outputAddrForTxt, addr;
 	logic memWriteM, stallF, counter;
 	

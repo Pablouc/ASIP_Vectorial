@@ -1,10 +1,13 @@
-module datapath(input logic clk, rst,stallF,flagUpdate, regWrite,regWriteW, aluSrc, PCSrc, immSrc,memToReg, memWrite,ra2Src,ra1Src,PCSrcW, 
+module datapath(input logic clk, rst,stallF,flagUpdate, regWrite,regWriteW, aluSrc, PCSrc, immSrc,memToReg, memWrite,
+					ra2Src,ra1Src,PCSrcW, aluSrc1, aluSrc2, zeroToAlu,
 					input logic [1:0]  aluControl,input logic [23:0] inst,input logic [3:0] WA3W,
-					input logic [23:0] resultW,output logic [23:0] srcB, output logic [15:0] postAluRes, PC, output logic cero, 
+					input logic [47:0] resultW,output logic [47:0] srcB,postAluResult, output logic [15:0] PC, output logic zeroFlag, 
 					regWriteE, PCSrcE,memToRegE, memWriteE, output logic [3:0] WA3E );
 	
-	
-	logic [23:0] srcA,aluResult, rd1,rd2, extImm, srcBAlu, extImmE, postAluResult;
+	logic zero1, zero2, zero3, zero4, zero5, zero6;
+	logic [47:0] srcA,aluResult, rd1,rd2, extImm, srcBAlu, extImmE;
+	logic [7:0] srcAlu_A1, srcAlu_A2,srcAlu_B2, srcAlu_A3,srcAlu_B3, srcAlu_A4,srcAlu_B4, srcAlu_A5,srcAlu_B5, srcAlu_A6,srcAlu_B6,
+					aluResult1, aluResult2, aluResult3, aluResult4, aluResult5, aluResult6;
 	logic [15:0] pcNext, resultWwire, pcPlus1;
 	logic [3:0] ra2, ra1, opcodeE;
 	logic [1:0] aluControlE;
@@ -36,22 +39,76 @@ module datapath(input logic clk, rst,stallF,flagUpdate, regWrite,regWriteW, aluS
 					aluControlE);
 					
 	//Control Condicional
-	condLogic conditional(clk, rst, flagUpdate,cero, PCSrcE1, regWriteE1,memWriteE1, opcodeE, PCSrcE, regWriteE,
+	condLogic conditional(clk, rst, flagUpdate,zeroFlag, PCSrcE1, regWriteE1,memWriteE1, opcodeE, PCSrcE, regWriteE,
 								memWriteE, postAluMuxSel);
 	
-	//Mux entrada b ALU
-	mux2a1 #(24) muxALU(srcB, extImmE, aluSrcE, srcBAlu);
-
-	//El parametro debe ir en 23, no 24.
-	alu #(23) alu_instance(srcA,srcBAlu,aluControlE,1'b0,aluResult, cero);
+	
+	//Seleccionando las entradas para las ALUs.
+		
+	//ALU1
+	//A																	 
+	mux2a1 #(8) muxALU1A(srcA[7:0], extImmE[7:0], aluSrcE, srcAlu_A1);
+	
+	//ALU2
+	//B
+	mux3a1 #(8) muxALU2B(srcB[15:8], srcB[7:0], aluSrc2, zeroToAlu, srcAlu_B2);
+	//A
+	mux2a1 #(8) muxALU2A(srcA[15:8], 8'b0, aluSrc1, srcAlu_A2);
+	
+	//ALU3
+	//B
+	mux3a1 #(8) muxALU3B(srcB[23:16], srcB[7:0], aluSrc2, zeroToAlu, srcAlu_B3);
+	//A
+	mux2a1 #(8) muxALU3A(srcA[23:16], 8'b0, aluSrc1, srcAlu_A3);
+	
+	//ALU4
+	//B
+	mux3a1 #(8) muxALU4B(srcB[31:24], srcB[7:0], aluSrc2, zeroToAlu, srcAlu_B4);
+	//A
+	mux2a1 #(8) muxALU4A(srcA[31:24], 8'b0, aluSrc1, srcAlu_A4);
+	
+	//ALU5
+	//B
+	mux3a1 #(8) muxALU5B(srcB[39:32], srcB[7:0], aluSrc2, zeroToAlu, srcAlu_B5);
+	//A
+	mux2a1 #(8) muxALU5A(srcA[39:32], 8'b0, aluSrc1, srcAlu_A5);
+	
+	//ALU6
+	//B
+	mux3a1 #(8) muxALU6B(srcB[47:40], srcB[7:0], aluSrc2, zeroToAlu, srcAlu_B6);
+	//A
+	mux2a1 #(8) muxALU6A(srcA[47:40], 8'b0, aluSrc1, srcAlu_A6);
+	
+	
+	//Creando las 6 instancias de ALU
+	
+	//El parametro debe ir en 7 no 8.
+	alu #(7) alu_instance1(srcAlu_A1,srcB[7:0],aluControlE,1'b0,aluResult1, zero1);
+	
+	alu #(7) alu_instance2(srcAlu_A2,srcAlu_B2,aluControlE,1'b0,aluResult2, zero2);
+	
+	alu #(7) alu_instance3(srcAlu_A3,srcAlu_B3,aluControlE,1'b0,aluResult3, zero3);
+	
+	alu #(7) alu_instance4(srcAlu_A4,srcAlu_B4,aluControlE,1'b0,aluResult4, zero4);
+	
+	alu #(7) alu_instance5(srcAlu_A5,srcAlu_B5,aluControlE,1'b0,aluResult5, zero5);
+	
+	alu #(7) alu_instance6(srcAlu_A6,srcAlu_B6,aluControlE,1'b0,aluResult6, zero6);
+	
+	//Concatenating the result of the 6 ALUs
+	assign aluResult= {aluResult6, aluResult5, aluResult4, aluResult3, aluResult2, aluResult1};
+	
+	//AND evaluation of all ALUs to check zero flag
+	assign zeroFlag = (zero1 && zero2 && zero3 && zero4 && zero5 && zero6) ? 1'b1 : 1'b0;
+	
 	
 	//aluRes es para el pc.
-	assign postAluRes= postAluResult[15:0];
+	//assign postAluRes= postAluResult[15:0];
 	//assign data = srcB;
 	
 	
 	//Mux para elegir entre la ALU y el Inmediato
-	mux2a1 #(24) muxPostALU(aluResult, extImmE, postAluMuxSel, postAluResult);
+	mux2a1 #(48) muxPostALU(aluResult, extImmE, postAluMuxSel, postAluResult);
 		
 	
 	

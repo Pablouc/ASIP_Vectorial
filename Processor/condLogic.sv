@@ -14,11 +14,14 @@ module condLogic(input logic clk, reset, flagUpdate,aluZero, PCS, regW, memWrite
 	assign memWrite = memWriteSrc & ~zeroFlag;
 	assign RegWrite = regW & ~zeroFlag;
 	
-	assign branchCond= (opcodeE==4'b1000) ? ~zeroFlag : 1'b0;///Not equal
-	assign branchType= (opcodeE==4'b0111) ? ~zeroFlag : branchCond; 
+	//If branchCond is true and ALUresult is zero set to 1 
+	assign branchCond= (opcodeE==4'b1001) ? ~zeroFlag : 1'b0;///Not equal
+	//If there is a branch set PCSrc to 1, else to branchCond result
+	//It is not possible to make a branch to memory position zero
+	assign branchType= (opcodeE==4'b1000) ? ~zeroFlag : branchCond; 
 	assign PCSrc = PCS & branchType;
 	
-	assign postAluMuxSel= (opcodeE==4'b1000) ? PCSrc : 1'b0;
+	assign postAluMuxSel= (opcodeE==4'b1001) ? PCSrc : 1'b0;
 	
 	
 endmodule 

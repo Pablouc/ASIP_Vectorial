@@ -1,6 +1,6 @@
-module registerAMem(input logic [23:0] RD, input logic [15:0] ALUOutM, input logic [3:0] WA3M, input logic clk,rst, 
+module registerAMem(input logic [47:0] RD, ALUOutM, input logic [3:0] WA3M, input logic clk,rst, 
 	input logic PCSrcM, regWriteM,memToRegM,
-	output logic [23:0] ReadData, output logic [15:0] AluOutW, output logic [3:0] WA3W, 
+	output logic [47:0] ReadData, AluOutW, output logic [3:0] WA3W, 
 	output logic PCSrcW, regWriteW,memToRegW );
 	
 	always_ff @(posedge clk, posedge rst) 

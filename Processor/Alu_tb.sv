@@ -1,5 +1,5 @@
 module Alu_tb();
-parameter WIDTH=23;
+parameter WIDTH=7;
 logic [WIDTH:0] a;
 logic [WIDTH:0] b;
 logic [1:0] opCode;
@@ -10,8 +10,8 @@ alu #(WIDTH) alu_instance(a,b,opCode,ci,out, cero);
 
 initial begin
 ////////////Primer caso///////
-a= 4'b0100;
-b= 4'b0001;
+a= 8'b01100000;
+b= 8'b01100000;
 ci=1'b0;
 $display("*******resultados para a=b0000 y b=b0100*******");
 
@@ -28,7 +28,7 @@ else if(cero==1'b1)$display("cero incorrecto");
 #20
 opCode= 2'b01;
 #5
-if(out==4'b0100) $display("resultado correcto en MULTIPLICACIÓN: 0100");
+if(out==14'b10010000000000) $display("resultado correcto en MULTIPLICACIÓN: 0100");
 else $display("resultado incorrecto en MULTIPLICACIÓN");
 
 #20

@@ -4,8 +4,9 @@ module processor_tb();
 
 logic clk, rst, enable; 
 logic[15:0] pc;
-logic [23:0]inst, result;
-logic [39:0] data;
+logic [23:0]inst;
+logic [47:0] result;
+logic [63:0] data;
 logic [39:0] memory [11:0];
 logic [3:0] btn;
 integer f, i;

@@ -5,35 +5,37 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -vlog01compat -work work +incdir+C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU {C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU/ROM.v}
-vlog -vlog01compat -work work +incdir+C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU {C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU/RAM.v}
-vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU {C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU/full_adder.sv}
-vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU {C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU/nbit_full_adder.sv}
-vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU {C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU/nbit_multiplier.sv}
-vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU {C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU/nbit_divider.sv}
-vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU {C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU/regFile.sv}
-vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU {C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU/alu.sv}
-vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU {C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU/adder.sv}
-vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU {C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU/extendSign.sv}
-vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU {C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU/processor.sv}
-vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU {C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU/asip.sv}
-vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU {C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU/controlUnit.sv}
-vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU {C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU/decoder.sv}
-vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU {C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU/mux2a1.sv}
-vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU {C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU/datapath.sv}
-vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU {C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU/condLogic.sv}
-vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU {C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU/flopenr.sv}
-vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU {C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU/ffNextValue.sv}
-vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU {C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU/hazardUnit.sv}
-vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU {C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU/comp2.sv}
-vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU {C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU/registerarom.sv}
-vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU {C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU/registerareg.sv}
-vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU {C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU/registeraalu.sv}
-vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU {C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU/registeramem.sv}
+vlog -vlog01compat -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/ROM.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/RAM.v}
+vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/full_adder.sv}
+vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/nbit_full_adder.sv}
+vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/nbit_multiplier.sv}
+vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/nbit_divider.sv}
+vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/regFile.sv}
+vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/alu.sv}
+vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/adder.sv}
+vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/extendSign.sv}
+vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/processor.sv}
+vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/asip.sv}
+vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/controlUnit.sv}
+vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/decoder.sv}
+vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/mux2a1.sv}
+vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/datapath.sv}
+vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/condLogic.sv}
+vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/flopenr.sv}
+vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/ffNextValue.sv}
+vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/processor_tb.sv}
+vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/hazardUnit.sv}
+vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/comp2.sv}
+vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/mux3a1.sv}
+vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/registerarom.sv}
+vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/registerareg.sv}
+vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/registeraalu.sv}
+vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/registeramem.sv}
 
-vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU {C:/Users/Pablo/Desktop/Arqui/proyecto2/Proyecto2-Pablo/Proyecto2-Arqui/ALU/processor_tb.sv}
+vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/processor_tb.sv}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  test1
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  test1
 
 add wave *
 view structure
