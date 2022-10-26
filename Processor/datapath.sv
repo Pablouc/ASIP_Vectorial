@@ -6,13 +6,12 @@ module datapath(input logic clk, rst,stallF,flagUpdate, regWrite,regWriteW, aluS
 	
 	logic zero1, zero2, zero3, zero4, zero5, zero6;
 	logic [47:0] srcA,aluResult, rd1,rd2, extImm, srcBAlu, extImmE;
-	logic [7:0] srcAlu_A1, srcAlu_A2,srcAlu_B2, srcAlu_A3,srcAlu_B3, srcAlu_A4,srcAlu_B4, srcAlu_A5,srcAlu_B5, srcAlu_A6,srcAlu_B6,
-					aluResult1, aluResult2, aluResult3, aluResult4, aluResult5, aluResult6;
+	logic [7:0] srcAlu_B1, srcAlu_A1, srcAlu_A2,srcAlu_B2, srcAlu_A3,srcAlu_B3, srcAlu_A4,srcAlu_B4, srcAlu_A5,
+					srcAlu_B5, srcAlu_A6,srcAlu_B6,aluResult1, aluResult2, aluResult3, aluResult4, aluResult5, aluResult6;
 	logic [15:0] pcNext, resultWwire, pcPlus1;
 	logic [3:0] ra2, ra1, opcodeE;
 	logic [1:0] aluControlE;
-	logic aluSrcE, 
-			ci,  PCSrcE1, regWriteE1, memWriteE1,postAluMuxSel;
+	logic aluSrcE,ci,  PCSrcE1, regWriteE1, memWriteE1,postAluMuxSel, flagUpdateE, aluSrc1E, aluSrc2E, zeroToAluE;
 	
 	//llamando al register file
 	regFile regfile(clk, PC, regWriteW, ra1,ra2,WA3W,resultW, rd1, rd2);
@@ -34,56 +33,59 @@ module datapath(input logic clk, rst,stallF,flagUpdate, regWrite,regWriteW, aluS
 	mux2a1 #(4) muxA2RegFile(inst[11:8],inst[19:16] ,ra2Src , ra2);
 	
 	//register
-	registerAReg regARefFile(rd1,rd2,inst[19:16],inst[23:20], extImm,clk,rst, regWrite, aluSrc, PCSrc,memToReg, memWrite, 
-					aluControl,srcA,srcB, WA3E,opcodeE, extImmE,regWriteE1, aluSrcE, PCSrcE1,memToRegE, memWriteE1, 
-					aluControlE);
+	registerAReg regARefFile(rd1,rd2,inst[19:16],inst[23:20], extImm,clk,rst, regWrite, aluSrc, PCSrc,memToReg, memWrite,flagUpdate,
+					aluSrc1, aluSrc2, zeroToAlu,aluControl,srcA,srcB, WA3E,opcodeE, extImmE,regWriteE1, aluSrcE, 
+					PCSrcE1,memToRegE, memWriteE1,flagUpdateE,aluSrc1E, aluSrc2E, zeroToAluE,aluControlE);
 					
 	//Control Condicional
-	condLogic conditional(clk, rst, flagUpdate,zeroFlag, PCSrcE1, regWriteE1,memWriteE1, opcodeE, PCSrcE, regWriteE,
+	condLogic conditional(clk, rst, flagUpdateE,zeroFlag, PCSrcE1, regWriteE1,memWriteE1, opcodeE, PCSrcE, regWriteE,
 								memWriteE, postAluMuxSel);
 	
 	
 	//Seleccionando las entradas para las ALUs.
 		
-	//ALU1
+	//ALU1//B
+	mux2a1 #(8) muxALU1B(srcB[7:0], 8'b0, zeroToAluE, srcAlu_B1);
+	
 	//A																	 
 	mux2a1 #(8) muxALU1A(srcA[7:0], extImmE[7:0], aluSrcE, srcAlu_A1);
 	
+	
 	//ALU2
 	//B
-	mux3a1 #(8) muxALU2B(srcB[15:8], srcB[7:0], aluSrc2, zeroToAlu, srcAlu_B2);
+	mux3a1 #(8) muxALU2B(srcB[15:8], srcB[7:0], aluSrc2E, zeroToAluE, srcAlu_B2);
 	//A
-	mux2a1 #(8) muxALU2A(srcA[15:8], 8'b0, aluSrc1, srcAlu_A2);
+	mux2a1 #(8) muxALU2A(srcA[15:8], 8'b0, aluSrc1E, srcAlu_A2);
 	
 	//ALU3
 	//B
-	mux3a1 #(8) muxALU3B(srcB[23:16], srcB[7:0], aluSrc2, zeroToAlu, srcAlu_B3);
+	mux3a1 #(8) muxALU3B(srcB[23:16], srcB[7:0], aluSrc2E, zeroToAluE, srcAlu_B3);
 	//A
-	mux2a1 #(8) muxALU3A(srcA[23:16], 8'b0, aluSrc1, srcAlu_A3);
+	mux2a1 #(8) muxALU3A(srcA[23:16], 8'b0, aluSrc1E, srcAlu_A3);
 	
 	//ALU4
 	//B
-	mux3a1 #(8) muxALU4B(srcB[31:24], srcB[7:0], aluSrc2, zeroToAlu, srcAlu_B4);
+	mux3a1 #(8) muxALU4B(srcB[31:24], srcB[7:0], aluSrc2E, zeroToAluE, srcAlu_B4);
 	//A
-	mux2a1 #(8) muxALU4A(srcA[31:24], 8'b0, aluSrc1, srcAlu_A4);
+	mux2a1 #(8) muxALU4A(srcA[31:24], 8'b0, aluSrc1E, srcAlu_A4);
 	
 	//ALU5
 	//B
-	mux3a1 #(8) muxALU5B(srcB[39:32], srcB[7:0], aluSrc2, zeroToAlu, srcAlu_B5);
+	mux3a1 #(8) muxALU5B(srcB[39:32], srcB[7:0], aluSrc2E, zeroToAluE, srcAlu_B5);
 	//A
-	mux2a1 #(8) muxALU5A(srcA[39:32], 8'b0, aluSrc1, srcAlu_A5);
+	mux2a1 #(8) muxALU5A(srcA[39:32], 8'b0, aluSrc1E, srcAlu_A5);
 	
 	//ALU6
 	//B
-	mux3a1 #(8) muxALU6B(srcB[47:40], srcB[7:0], aluSrc2, zeroToAlu, srcAlu_B6);
+	mux3a1 #(8) muxALU6B(srcB[47:40], srcB[7:0], aluSrc2E, zeroToAluE, srcAlu_B6);
 	//A
-	mux2a1 #(8) muxALU6A(srcA[47:40], 8'b0, aluSrc1, srcAlu_A6);
+	mux2a1 #(8) muxALU6A(srcA[47:40], 8'b0, aluSrc1E, srcAlu_A6);
 	
 	
 	//Creando las 6 instancias de ALU
 	
 	//El parametro debe ir en 7 no 8.
-	alu #(7) alu_instance1(srcAlu_A1,srcB[7:0],aluControlE,1'b0,aluResult1, zero1);
+	alu #(7) alu_instance1(srcAlu_A1,srcAlu_B1,aluControlE,1'b0,aluResult1, zero1);
 	
 	alu #(7) alu_instance2(srcAlu_A2,srcAlu_B2,aluControlE,1'b0,aluResult2, zero2);
 	

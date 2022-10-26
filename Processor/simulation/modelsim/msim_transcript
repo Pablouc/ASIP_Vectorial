@@ -13,289 +13,289 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/ROM.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:19:32 on Oct 25,2022
+# Start time: 01:40:12 on Oct 26,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor" C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/ROM.v 
 # -- Compiling module ROM
 # 
 # Top level modules:
 # 	ROM
-# End time: 01:19:32 on Oct 25,2022, Elapsed time: 0:00:00
+# End time: 01:40:12 on Oct 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/RAM.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:19:32 on Oct 25,2022
+# Start time: 01:40:13 on Oct 26,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor" C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/RAM.v 
 # -- Compiling module RAM
 # 
 # Top level modules:
 # 	RAM
-# End time: 01:19:32 on Oct 25,2022, Elapsed time: 0:00:00
+# End time: 01:40:13 on Oct 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/full_adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:19:32 on Oct 25,2022
+# Start time: 01:40:13 on Oct 26,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor" C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/full_adder.sv 
 # -- Compiling module full_adder
 # 
 # Top level modules:
 # 	full_adder
-# End time: 01:19:32 on Oct 25,2022, Elapsed time: 0:00:00
+# End time: 01:40:13 on Oct 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/nbit_full_adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:19:33 on Oct 25,2022
+# Start time: 01:40:13 on Oct 26,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor" C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/nbit_full_adder.sv 
 # -- Compiling module nbit_full_adder
 # 
 # Top level modules:
 # 	nbit_full_adder
-# End time: 01:19:33 on Oct 25,2022, Elapsed time: 0:00:00
+# End time: 01:40:13 on Oct 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/nbit_multiplier.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:19:33 on Oct 25,2022
+# Start time: 01:40:13 on Oct 26,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor" C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/nbit_multiplier.sv 
 # -- Compiling module nbit_multiplier
 # 
 # Top level modules:
 # 	nbit_multiplier
-# End time: 01:19:33 on Oct 25,2022, Elapsed time: 0:00:00
+# End time: 01:40:13 on Oct 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/nbit_divider.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:19:33 on Oct 25,2022
+# Start time: 01:40:13 on Oct 26,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor" C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/nbit_divider.sv 
 # -- Compiling module nbit_divider
 # 
 # Top level modules:
 # 	nbit_divider
-# End time: 01:19:33 on Oct 25,2022, Elapsed time: 0:00:00
+# End time: 01:40:13 on Oct 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/regFile.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:19:33 on Oct 25,2022
+# Start time: 01:40:13 on Oct 26,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor" C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/regFile.sv 
 # -- Compiling module regFile
 # 
 # Top level modules:
 # 	regFile
-# End time: 01:19:33 on Oct 25,2022, Elapsed time: 0:00:00
+# End time: 01:40:13 on Oct 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/alu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:19:33 on Oct 25,2022
+# Start time: 01:40:14 on Oct 26,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor" C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/alu.sv 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 01:19:33 on Oct 25,2022, Elapsed time: 0:00:00
+# End time: 01:40:14 on Oct 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:19:33 on Oct 25,2022
+# Start time: 01:40:14 on Oct 26,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor" C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/adder.sv 
 # -- Compiling module adder
 # 
 # Top level modules:
 # 	adder
-# End time: 01:19:33 on Oct 25,2022, Elapsed time: 0:00:00
+# End time: 01:40:14 on Oct 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/extendSign.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:19:33 on Oct 25,2022
+# Start time: 01:40:14 on Oct 26,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor" C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/extendSign.sv 
 # -- Compiling module extendSign
 # 
 # Top level modules:
 # 	extendSign
-# End time: 01:19:33 on Oct 25,2022, Elapsed time: 0:00:00
+# End time: 01:40:14 on Oct 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/processor.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:19:33 on Oct 25,2022
+# Start time: 01:40:14 on Oct 26,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor" C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/processor.sv 
 # -- Compiling module processor
 # 
 # Top level modules:
 # 	processor
-# End time: 01:19:33 on Oct 25,2022, Elapsed time: 0:00:00
+# End time: 01:40:14 on Oct 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/asip.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:19:34 on Oct 25,2022
+# Start time: 01:40:14 on Oct 26,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor" C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/asip.sv 
 # -- Compiling module asip
 # 
 # Top level modules:
 # 	asip
-# End time: 01:19:34 on Oct 25,2022, Elapsed time: 0:00:00
+# End time: 01:40:14 on Oct 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/controlUnit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:19:34 on Oct 25,2022
+# Start time: 01:40:14 on Oct 26,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor" C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/controlUnit.sv 
 # -- Compiling module controlUnit
 # 
 # Top level modules:
 # 	controlUnit
-# End time: 01:19:34 on Oct 25,2022, Elapsed time: 0:00:00
+# End time: 01:40:14 on Oct 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/decoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:19:34 on Oct 25,2022
+# Start time: 01:40:14 on Oct 26,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor" C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/decoder.sv 
 # -- Compiling module decoder
 # 
 # Top level modules:
 # 	decoder
-# End time: 01:19:34 on Oct 25,2022, Elapsed time: 0:00:00
+# End time: 01:40:14 on Oct 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/mux2a1.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:19:34 on Oct 25,2022
+# Start time: 01:40:14 on Oct 26,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor" C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/mux2a1.sv 
 # -- Compiling module mux2a1
 # 
 # Top level modules:
 # 	mux2a1
-# End time: 01:19:34 on Oct 25,2022, Elapsed time: 0:00:00
+# End time: 01:40:15 on Oct 26,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/datapath.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:19:34 on Oct 25,2022
+# Start time: 01:40:15 on Oct 26,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor" C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/datapath.sv 
 # -- Compiling module datapath
 # 
 # Top level modules:
 # 	datapath
-# End time: 01:19:34 on Oct 25,2022, Elapsed time: 0:00:00
+# End time: 01:40:15 on Oct 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/condLogic.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:19:34 on Oct 25,2022
+# Start time: 01:40:15 on Oct 26,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor" C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/condLogic.sv 
 # -- Compiling module condLogic
 # 
 # Top level modules:
 # 	condLogic
-# End time: 01:19:34 on Oct 25,2022, Elapsed time: 0:00:00
+# End time: 01:40:15 on Oct 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/flopenr.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:19:34 on Oct 25,2022
+# Start time: 01:40:15 on Oct 26,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor" C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/flopenr.sv 
 # -- Compiling module flopenr
 # 
 # Top level modules:
 # 	flopenr
-# End time: 01:19:34 on Oct 25,2022, Elapsed time: 0:00:00
+# End time: 01:40:15 on Oct 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/ffNextValue.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:19:34 on Oct 25,2022
+# Start time: 01:40:15 on Oct 26,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor" C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/ffNextValue.sv 
 # -- Compiling module ffNextValue
 # 
 # Top level modules:
 # 	ffNextValue
-# End time: 01:19:34 on Oct 25,2022, Elapsed time: 0:00:00
+# End time: 01:40:15 on Oct 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/processor_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:19:35 on Oct 25,2022
+# Start time: 01:40:15 on Oct 26,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor" C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/processor_tb.sv 
 # -- Compiling module processor_tb
 # 
 # Top level modules:
 # 	processor_tb
-# End time: 01:19:35 on Oct 25,2022, Elapsed time: 0:00:00
+# End time: 01:40:15 on Oct 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/hazardUnit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:19:35 on Oct 25,2022
+# Start time: 01:40:15 on Oct 26,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor" C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/hazardUnit.sv 
 # -- Compiling module hazardUnit
 # 
 # Top level modules:
 # 	hazardUnit
-# End time: 01:19:35 on Oct 25,2022, Elapsed time: 0:00:00
+# End time: 01:40:15 on Oct 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/comp2.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:19:35 on Oct 25,2022
+# Start time: 01:40:15 on Oct 26,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor" C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/comp2.sv 
 # -- Compiling module comp2
 # 
 # Top level modules:
 # 	comp2
-# End time: 01:19:35 on Oct 25,2022, Elapsed time: 0:00:00
+# End time: 01:40:15 on Oct 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/mux3a1.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:19:35 on Oct 25,2022
+# Start time: 01:40:15 on Oct 26,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor" C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/mux3a1.sv 
 # -- Compiling module mux3a1
 # 
 # Top level modules:
 # 	mux3a1
-# End time: 01:19:35 on Oct 25,2022, Elapsed time: 0:00:00
+# End time: 01:40:16 on Oct 26,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/registerarom.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:19:35 on Oct 25,2022
+# Start time: 01:40:16 on Oct 26,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor" C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/registerarom.sv 
 # -- Compiling module registerAROM
 # 
 # Top level modules:
 # 	registerAROM
-# End time: 01:19:35 on Oct 25,2022, Elapsed time: 0:00:00
+# End time: 01:40:16 on Oct 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/registerareg.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:19:35 on Oct 25,2022
+# Start time: 01:40:16 on Oct 26,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor" C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/registerareg.sv 
 # -- Compiling module registerAReg
 # 
 # Top level modules:
 # 	registerAReg
-# End time: 01:19:35 on Oct 25,2022, Elapsed time: 0:00:00
+# End time: 01:40:16 on Oct 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/registeraalu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:19:35 on Oct 25,2022
+# Start time: 01:40:16 on Oct 26,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor" C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/registeraalu.sv 
 # -- Compiling module registerAALU
 # 
 # Top level modules:
 # 	registerAALU
-# End time: 01:19:35 on Oct 25,2022, Elapsed time: 0:00:00
+# End time: 01:40:16 on Oct 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/registeramem.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:19:35 on Oct 25,2022
+# Start time: 01:40:16 on Oct 26,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor" C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/registeramem.sv 
 # -- Compiling module registerAMem
 # 
 # Top level modules:
 # 	registerAMem
-# End time: 01:19:36 on Oct 25,2022, Elapsed time: 0:00:01
+# End time: 01:40:16 on Oct 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/Pablo/Desktop/TEC/II\ Semestre\ 2022/Arqui\ II/Proyecto\ 2/ASIP_Vectorial/Processor {C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/processor_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:19:36 on Oct 25,2022
+# Start time: 01:40:16 on Oct 26,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor" C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/processor_tb.sv 
 # -- Compiling module processor_tb
 # 
 # Top level modules:
 # 	processor_tb
-# End time: 01:19:36 on Oct 25,2022, Elapsed time: 0:00:00
+# End time: 01:40:16 on Oct 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  test1
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=""+acc"" test1 
-# Start time: 01:19:36 on Oct 25,2022
+# Start time: 01:40:16 on Oct 26,2022
 # ** Error: (vsim-3170) Could not find 'test1'.
 #         Searched libraries:
 #             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera
@@ -314,7 +314,7 @@
 # MACRO ./Alu_run_msim_rtl_verilog.do PAUSED at line 38
 vsim -L altera_mf_ver -L lpm_ver processor_tb
 # vsim -L altera_mf_ver -L lpm_ver processor_tb 
-# Start time: 01:19:36 on Oct 25,2022
+# Start time: 01:40:16 on Oct 26,2022
 # Loading sv_std.std
 # Loading work.processor_tb
 # Loading work.processor
@@ -347,20 +347,19 @@ vsim -L altera_mf_ver -L lpm_ver processor_tb
 # Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
 # Loading work.full_adder
-# ** Warning: (vsim-3015) [PCDPC] - Port size (48) does not match connection size (16) for port 'A'. The port definition is at: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/asip.sv(2).
-#    Time: 0 ps  Iteration: 0  Instance: /processor_tb/procesador/myProcessor File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/processor.sv Line: 14
 add wave -position end  sim:/processor_tb/clk
 add wave -position end  sim:/processor_tb/inst
 add wave -position end  sim:/processor_tb/result
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Pablo  Hostname: DESKTOP-6U9CR88  ProcessID: 6432
-#           Attempting to use alternate WLF file "./wlftk2f4dw".
+#           Attempting to use alternate WLF file "./wlft9x9vc4".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftk2f4dw
+#           Using alternate file: ./wlft9x9vc4
 run
 # resultado incorrecto de ADDI R6, R6, 96
 # resultado incorrecto de MULT R6, R6, R6
+# resultado incorrecto de MULTI R6, R6, 4
 # resultado incorrecto de LDR R7, #1
 # resultado incorrecto de STR R7, #1
-# End time: 01:22:00 on Oct 25,2022, Elapsed time: 0:02:24
-# Errors: 1, Warnings: 3
+# End time: 01:41:37 on Oct 26,2022, Elapsed time: 0:01:21
+# Errors: 1, Warnings: 2

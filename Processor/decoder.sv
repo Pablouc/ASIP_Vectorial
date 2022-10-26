@@ -23,7 +23,7 @@ case(opcode)
 	ra1Src=1'b0;
 	//New signals for ALU
 	aluSrc1=1'b0;
-	aluSrc2=1'b0;
+	aluSrc2=1'b1;
 	zeroToAlu=1'b0;
 	
 	end
@@ -43,7 +43,7 @@ case(opcode)
 	ra1Src=1'b0;
 	//New signals for ALU
 	aluSrc1=1'b0;
-	aluSrc2=1'b0;
+	aluSrc2=1'b1;
 	zeroToAlu=1'b0;
 	end
 

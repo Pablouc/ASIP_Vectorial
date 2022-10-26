@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Alu
-Tue Oct 25 01:19:13 2022
+Wed Oct 26 01:40:00 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -19,77 +19,79 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  11. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxA1RegFile
  12. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxA2RegFile
  13. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|condLogic:conditional|flopenr:flagreg1
- 14. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxALU1A
- 15. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|mux3a1:muxALU2B
- 16. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxALU2A
- 17. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|mux3a1:muxALU3B
- 18. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxALU3A
- 19. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|mux3a1:muxALU4B
- 20. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxALU4A
- 21. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|mux3a1:muxALU5B
- 22. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxALU5A
- 23. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|mux3a1:muxALU6B
- 24. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxALU6A
- 25. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance1
- 26. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance1|nbit_full_adder:sum_instance
- 27. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance1|nbit_multiplier:multInst
- 28. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance1|nbit_divider:divInst
- 29. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance1|comp2:c_instance
- 30. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance1|nbit_full_adder:sub_instance
- 31. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance2
- 32. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance2|nbit_full_adder:sum_instance
- 33. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance2|nbit_multiplier:multInst
- 34. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance2|nbit_divider:divInst
- 35. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance2|comp2:c_instance
- 36. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance2|nbit_full_adder:sub_instance
- 37. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance3
- 38. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance3|nbit_full_adder:sum_instance
- 39. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance3|nbit_multiplier:multInst
- 40. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance3|nbit_divider:divInst
- 41. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance3|comp2:c_instance
- 42. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance3|nbit_full_adder:sub_instance
- 43. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance4
- 44. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance4|nbit_full_adder:sum_instance
- 45. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance4|nbit_multiplier:multInst
- 46. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance4|nbit_divider:divInst
- 47. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance4|comp2:c_instance
- 48. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance4|nbit_full_adder:sub_instance
- 49. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance5
- 50. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance5|nbit_full_adder:sum_instance
- 51. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance5|nbit_multiplier:multInst
- 52. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance5|nbit_divider:divInst
- 53. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance5|comp2:c_instance
- 54. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance5|nbit_full_adder:sub_instance
- 55. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance6
- 56. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance6|nbit_full_adder:sum_instance
- 57. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance6|nbit_multiplier:multInst
- 58. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance6|nbit_divider:divInst
- 59. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance6|comp2:c_instance
- 60. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance6|nbit_full_adder:sub_instance
- 61. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxPostALU
- 62. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|mux2a1:muxMemALU
- 63. Parameter Settings for User Entity Instance: processor:procesador|RAM:memdata|altsyncram:altsyncram_component
- 64. altsyncram Parameter Settings by Entity Instance
- 65. Analysis & Elaboration Settings
- 66. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance6"
- 67. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance5"
- 68. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance4"
- 69. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance3"
- 70. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance2"
- 71. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance1|nbit_full_adder:sub_instance"
- 72. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance1|nbit_full_adder:sum_instance"
- 73. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance1"
- 74. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxALU6A"
- 75. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxALU5A"
- 76. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxALU4A"
- 77. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxALU3A"
- 78. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxALU2A"
- 79. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|adder:pcAdder"
- 80. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath"
- 81. Port Connectivity Checks: "processor:procesador|asip:myProcessor"
- 82. Port Connectivity Checks: "processor:procesador"
- 83. Analysis & Elaboration Messages
- 84. Analysis & Elaboration Suppressed Messages
+ 14. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxALU1B
+ 15. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxALU1A
+ 16. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|mux3a1:muxALU2B
+ 17. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxALU2A
+ 18. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|mux3a1:muxALU3B
+ 19. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxALU3A
+ 20. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|mux3a1:muxALU4B
+ 21. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxALU4A
+ 22. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|mux3a1:muxALU5B
+ 23. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxALU5A
+ 24. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|mux3a1:muxALU6B
+ 25. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxALU6A
+ 26. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance1
+ 27. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance1|nbit_full_adder:sum_instance
+ 28. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance1|nbit_multiplier:multInst
+ 29. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance1|nbit_divider:divInst
+ 30. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance1|comp2:c_instance
+ 31. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance1|nbit_full_adder:sub_instance
+ 32. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance2
+ 33. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance2|nbit_full_adder:sum_instance
+ 34. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance2|nbit_multiplier:multInst
+ 35. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance2|nbit_divider:divInst
+ 36. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance2|comp2:c_instance
+ 37. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance2|nbit_full_adder:sub_instance
+ 38. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance3
+ 39. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance3|nbit_full_adder:sum_instance
+ 40. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance3|nbit_multiplier:multInst
+ 41. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance3|nbit_divider:divInst
+ 42. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance3|comp2:c_instance
+ 43. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance3|nbit_full_adder:sub_instance
+ 44. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance4
+ 45. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance4|nbit_full_adder:sum_instance
+ 46. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance4|nbit_multiplier:multInst
+ 47. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance4|nbit_divider:divInst
+ 48. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance4|comp2:c_instance
+ 49. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance4|nbit_full_adder:sub_instance
+ 50. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance5
+ 51. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance5|nbit_full_adder:sum_instance
+ 52. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance5|nbit_multiplier:multInst
+ 53. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance5|nbit_divider:divInst
+ 54. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance5|comp2:c_instance
+ 55. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance5|nbit_full_adder:sub_instance
+ 56. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance6
+ 57. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance6|nbit_full_adder:sum_instance
+ 58. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance6|nbit_multiplier:multInst
+ 59. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance6|nbit_divider:divInst
+ 60. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance6|comp2:c_instance
+ 61. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance6|nbit_full_adder:sub_instance
+ 62. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxPostALU
+ 63. Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|mux2a1:muxMemALU
+ 64. Parameter Settings for User Entity Instance: processor:procesador|RAM:memdata|altsyncram:altsyncram_component
+ 65. altsyncram Parameter Settings by Entity Instance
+ 66. Analysis & Elaboration Settings
+ 67. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance6"
+ 68. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance5"
+ 69. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance4"
+ 70. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance3"
+ 71. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance2"
+ 72. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance1|nbit_full_adder:sub_instance"
+ 73. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance1|nbit_full_adder:sum_instance"
+ 74. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance1"
+ 75. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxALU6A"
+ 76. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxALU5A"
+ 77. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxALU4A"
+ 78. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxALU3A"
+ 79. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxALU2A"
+ 80. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxALU1B"
+ 81. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|adder:pcAdder"
+ 82. Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath"
+ 83. Port Connectivity Checks: "processor:procesador|asip:myProcessor"
+ 84. Port Connectivity Checks: "processor:procesador"
+ 85. Analysis & Elaboration Messages
+ 86. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -116,7 +118,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                   ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Tue Oct 25 01:19:13 2022       ;
+; Analysis & Elaboration Status      ; Successful - Wed Oct 26 01:40:00 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Alu                                         ;
 ; Top-level Entity Name              ; processor_tb                                ;
@@ -299,6 +301,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+--------------------------------------------------------------------------------------------------------------------+
 ; M              ; 1     ; Signed Integer                                                                                                     ;
 +----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxALU1B ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+; M              ; 8     ; Signed Integer                                                                              ;
++----------------+-------+---------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1088,6 +1100,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+---------------------------------------------------------------------------+
 
 
++-----------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxALU1B" ;
++------+-------+----------+---------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                   ;
++------+-------+----------+---------------------------------------------------------------------------+
+; d1   ; Input ; Info     ; Stuck at GND                                                              ;
++------+-------+----------+---------------------------------------------------------------------------+
+
+
 +---------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "processor:procesador|asip:myProcessor|datapath:datapath|adder:pcAdder" ;
 +----------+-------+----------+---------------------------------------------------------------------+
@@ -1107,13 +1128,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "processor:procesador|asip:myProcessor"                                                                                   ;
-+------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                                  ;
-+------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
-; A    ; Output ; Warning  ; Output or bidir port (48 bits) is wider than the port expression (16 bits) it drives; bit(s) "A[47..16]" have no fanouts ;
-+------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "processor:procesador|asip:myProcessor"                                                   ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; A[47..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------+
@@ -1135,7 +1156,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Oct 25 01:19:01 2022
+    Info: Processing started: Wed Oct 26 01:39:47 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Alu -c Alu --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1246,20 +1267,20 @@ Info (12128): Elaborating entity "controlUnit" for hierarchy "processor:procesad
 Info (12128): Elaborating entity "decoder" for hierarchy "processor:procesador|asip:myProcessor|controlUnit:controller|decoder:deco" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/controlUnit.sv Line: 7
 Info (12128): Elaborating entity "hazardUnit" for hierarchy "processor:procesador|asip:myProcessor|hazardUnit:hazardU" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/asip.sv Line: 16
 Info (12128): Elaborating entity "datapath" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/asip.sv Line: 22
-Info (12128): Elaborating entity "regFile" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|regFile:regfile" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/datapath.sv Line: 18
-Info (12128): Elaborating entity "adder" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|adder:pcAdder" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/datapath.sv Line: 22
-Info (12128): Elaborating entity "mux2a1" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxPcSrc" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/datapath.sv Line: 24
-Info (12128): Elaborating entity "ffNextValue" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|ffNextValue:pcRegister" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/datapath.sv Line: 25
-Info (12128): Elaborating entity "extendSign" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|extendSign:extSign" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/datapath.sv Line: 28
-Info (12128): Elaborating entity "mux2a1" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxA1RegFile" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/datapath.sv Line: 31
+Info (12128): Elaborating entity "regFile" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|regFile:regfile" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/datapath.sv Line: 17
+Info (12128): Elaborating entity "adder" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|adder:pcAdder" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/datapath.sv Line: 21
+Info (12128): Elaborating entity "mux2a1" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxPcSrc" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/datapath.sv Line: 23
+Info (12128): Elaborating entity "ffNextValue" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|ffNextValue:pcRegister" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/datapath.sv Line: 24
+Info (12128): Elaborating entity "extendSign" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|extendSign:extSign" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/datapath.sv Line: 27
+Info (12128): Elaborating entity "mux2a1" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxA1RegFile" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/datapath.sv Line: 30
 Warning (12125): Using design file registerareg.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: registerAReg File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/registerareg.sv Line: 1
-Info (12128): Elaborating entity "registerAReg" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|registerAReg:regARefFile" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/datapath.sv Line: 39
-Info (12128): Elaborating entity "condLogic" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|condLogic:conditional" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/datapath.sv Line: 43
+Info (12128): Elaborating entity "registerAReg" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|registerAReg:regARefFile" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/datapath.sv Line: 38
+Info (12128): Elaborating entity "condLogic" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|condLogic:conditional" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/datapath.sv Line: 42
 Info (12128): Elaborating entity "flopenr" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|condLogic:conditional|flopenr:flagreg1" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/condLogic.sv Line: 11
-Info (12128): Elaborating entity "mux2a1" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxALU1A" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/datapath.sv Line: 50
-Info (12128): Elaborating entity "mux3a1" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|mux3a1:muxALU2B" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/datapath.sv Line: 54
-Info (12128): Elaborating entity "alu" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance1" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/datapath.sv Line: 86
+Info (12128): Elaborating entity "mux2a1" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxALU1B" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/datapath.sv Line: 48
+Info (12128): Elaborating entity "mux3a1" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|mux3a1:muxALU2B" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/datapath.sv Line: 56
+Info (12128): Elaborating entity "alu" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance1" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/datapath.sv Line: 88
 Info (12128): Elaborating entity "nbit_full_adder" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance1|nbit_full_adder:sum_instance" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/alu.sv Line: 23
 Info (12128): Elaborating entity "full_adder" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance1|nbit_full_adder:sum_instance|full_adder:geninstance[0].f1_instance" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/nbit_full_adder.sv Line: 14
 Info (12128): Elaborating entity "nbit_multiplier" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance1|nbit_multiplier:multInst" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/alu.sv Line: 27
@@ -1269,7 +1290,7 @@ Info (12128): Elaborating entity "nbit_divider" for hierarchy "processor:procesa
 Info (12128): Elaborating entity "comp2" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance1|comp2:c_instance" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/alu.sv Line: 35
 Warning (10230): Verilog HDL assignment warning at comp2.sv(11): truncated value with size 32 to match size of target (8) File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/comp2.sv Line: 11
 Info (12128): Elaborating entity "nbit_full_adder" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|alu:alu_instance1|nbit_full_adder:sub_instance" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/alu.sv Line: 37
-Info (12128): Elaborating entity "mux2a1" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxPostALU" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/datapath.sv Line: 111
+Info (12128): Elaborating entity "mux2a1" for hierarchy "processor:procesador|asip:myProcessor|datapath:datapath|mux2a1:muxPostALU" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/datapath.sv Line: 113
 Warning (12125): Using design file registeraalu.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: registerAALU File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/registeraalu.sv Line: 1
 Info (12128): Elaborating entity "registerAALU" for hierarchy "processor:procesador|asip:myProcessor|registerAALU:regALU" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/asip.sv Line: 27
@@ -1306,12 +1327,11 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/mux_
 Info (12128): Elaborating entity "mux_psb" for hierarchy "processor:procesador|RAM:memdata|altsyncram:altsyncram_component|altsyncram_e7i1:auto_generated|mux_psb:mux2" File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/db/altsyncram_e7i1.tdf Line: 46
 Warning (12011): Net is missing source, defaulting to GND
     Warning (12110): Net "clk" is missing source, defaulting to GND File: C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/processor_tb.sv Line: 5
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (144001): Generated suppressed messages file C:/Users/Pablo/Desktop/TEC/II Semestre 2022/Arqui II/Proyecto 2/ASIP_Vectorial/Processor/output_files/Alu.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 13 warnings
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 12 warnings
     Info: Peak virtual memory: 4837 megabytes
-    Info: Processing ended: Tue Oct 25 01:19:13 2022
-    Info: Elapsed time: 00:00:12
+    Info: Processing ended: Wed Oct 26 01:40:00 2022
+    Info: Elapsed time: 00:00:13
     Info: Total CPU time (on all processors): 00:00:27
 
 
