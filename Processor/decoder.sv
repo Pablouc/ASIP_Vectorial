@@ -107,10 +107,25 @@ case(opcode)
 
 
 
-//4'b0101:begin
+4'b0101:begin
 	//Sub
-	//Needs to be implemented on ALU
-	//end
+	aluControl=2'b11;
+	regWrite=1'b1;
+	aluSrc= 1'b0;
+	PCSrc=1'b0;
+	flagUpdate=1'b1;
+	memToReg=1'b1;
+	ra2Src=1'b0;
+	//para que no hayan latches
+	immSrc=1'b0;
+	memWrite=1'b0;
+	ra1Src=1'b0;
+	//New signals for ALU
+	aluSrc1=1'b0;
+	aluSrc2=1'b0;
+	zeroToAlu=1'b0;
+	end
+
 
 4'b0110:begin
 	//suma con inmediato
@@ -131,10 +146,24 @@ case(opcode)
 	zeroToAlu=1'b1;
 	end
 	
-//4'b0111: begin
+4'b0111: begin
 	//Sub with immediate
-	
-	//end
+	aluControl=2'b11;
+	regWrite=1'b1;
+	aluSrc= 1'b1;
+	PCSrc=1'b0;
+	flagUpdate=1'b1;
+	memToReg=1'b1;
+	//para que no hayan latches
+	immSrc=1'b0;
+	memWrite=1'b0;
+	ra2Src=1'b0;
+	ra1Src=1'b0;
+	//New signals for ALU
+	aluSrc1=1'b1;
+	aluSrc2=1'b0;
+	zeroToAlu=1'b1;
+	end
 	
 4'b1000:begin
    //Branch
@@ -152,7 +181,7 @@ case(opcode)
 	//New signals for ALU
 	aluSrc1=1'b1;
 	aluSrc2=1'b0;
-	zeroToAlu=1'b1;
+	zeroToAlu=1'b0;
 	end
 
 4'b1001:begin
@@ -170,7 +199,7 @@ case(opcode)
 	ra1Src=1'b0;
 	//New signals for ALU
 	aluSrc1=1'b0;
-	aluSrc2=1'b0;
+	aluSrc2=1'b1;
 	zeroToAlu=1'b0;
 	end
 

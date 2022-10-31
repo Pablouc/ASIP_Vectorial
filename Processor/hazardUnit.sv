@@ -3,8 +3,8 @@ module hazardUnit(input logic pcSrc, pcSrcE, pcSrcM, pcSrcW,
 
 						
 
-
-assign stallF = (((pcSrc == 1'b1) | (pcSrcE == 1'b1) | (pcSrcM == 1'b1)) & (pcSrcW != 1'b1)) ? 1'b1 : 1'b0;
+						//(pcSrc == 1'b1) |
+assign stallF = (( (pcSrcE == 1'b1) | (pcSrcM == 1'b1)) & (pcSrcW != 1'b1)) ? 1'b1 : 1'b0;
 			
 
 

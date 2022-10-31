@@ -1,5 +1,5 @@
 module alu#(parameter WIDTH=3)(input [WIDTH:0] a, input [WIDTH:0] b, input [1:0] opCode, input ci, 
-							output logic [WIDTH:0] out, output logic  cero);
+							output logic [WIDTH:0] out, output logic  cero, negativo);
 
 logic [WIDTH:0] outMult;
 logic [WIDTH:0] outDiv;
@@ -7,6 +7,7 @@ logic [WIDTH:0] outSum;
 logic coWire, acarreoWire, ceroWire;
 logic  coSum;
 
+logic [WIDTH:0] setToZero;
 logic [WIDTH+1:0]outSub;
 logic [WIDTH+1:0]outSubToPos;
 logic [WIDTH+1:0] aSub;
@@ -51,6 +52,7 @@ case(opCode)
 	
 	//Bandera cero
 	cero= out ? 1'b0: 1'b1;
+	negativo=1'b0;
 
 
 
@@ -61,7 +63,7 @@ case(opCode)
 	
 	//Bandera cero
 	cero= out ? 1'b0: 1'b1;
-
+	negativo=1'b0;
 
 	
 	end
@@ -72,7 +74,7 @@ case(opCode)
 	
 	//Bandera cero
 	cero= out ? 1'b0: 1'b1;
-
+	negativo=1'b0;
 
 
 	
@@ -83,19 +85,23 @@ case(opCode)
 
 
 2'b11:begin
-	
-	//if(outSub[WIDTH+1]==0)begin 
+	//Resultado positivo o cero
+	if(outSub[WIDTH+1]==0)begin 
 		
 		out=outSub[WIDTH:0];
 		
 		//Bandera cero
 		cero= out ? 1'b0: 1'b1;
-//	end
-//
-//	else if(outSub[WIDTH+1]==1)begin
-//		outSubToPos=~outSub+1;
-//		out=outSubToPos[WIDTH:0];
-//	end
+		negativo=1'b0;
+	end
+	
+	//Resultado es negativo 
+	else if(outSub[WIDTH+1]==1)begin
+		negativo=1'b1;
+		setToZero= 0;
+		out=setToZero;
+		cero= 1'b1;
+	end
 
 end
 
@@ -103,6 +109,7 @@ default:begin
 	  out=2'b00;
 	  
 	  cero=1'b0;
+	  negativo=1'b0;
 
 		  end
 

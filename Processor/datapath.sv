@@ -1,12 +1,12 @@
 module datapath(input logic clk, rst,stallF,flagUpdate, regWrite,regWriteW, aluSrc, PCSrc, immSrc,memToReg, memWrite,
 					ra2Src,ra1Src,PCSrcW, aluSrc1, aluSrc2, zeroToAlu,
 					input logic [1:0]  aluControl,input logic [23:0] inst,input logic [3:0] WA3W,
-					input logic [47:0] resultW,output logic [47:0] srcB,postAluResult, output logic [15:0] PC, output logic zeroFlag, 
+					input logic [47:0] resultW,output logic [47:0] srcB,postAluResult, output logic [15:0] PC, output logic zeroFlag,negative1, 
 					regWriteE, PCSrcE,memToRegE, memWriteE, output logic [3:0] WA3E );
 	
-	logic zero1, zero2, zero3, zero4, zero5, zero6;
+	logic zero1, zero2, zero3, zero4, zero5, zero6, negative2, negative3, negative4, negative5, negative6;
 	logic [47:0] srcA,aluResult, rd1,rd2, extImm, srcBAlu, extImmE;
-	logic [7:0] srcAlu_B1, srcAlu_A1, srcAlu_A2,srcAlu_B2, srcAlu_A3,srcAlu_B3, srcAlu_A4,srcAlu_B4, srcAlu_A5,
+	logic [7:0] srcAlu_B1, srcAlu_A1, srcAlu_A2,srcAlu_B2, srcAlu_A3,srcAlu_B3, srcAlu_A4,srcAlu_B4, srcAlu_A5,srcAlu_A1_1,srcAlu_B1_1,
 					srcAlu_B5, srcAlu_A6,srcAlu_B6,aluResult1, aluResult2, aluResult3, aluResult4, aluResult5, aluResult6;
 	logic [15:0] pcNext, resultWwire, pcPlus1;
 	logic [3:0] ra2, ra1, opcodeE;
@@ -38,14 +38,14 @@ module datapath(input logic clk, rst,stallF,flagUpdate, regWrite,regWriteW, aluS
 					PCSrcE1,memToRegE, memWriteE1,flagUpdateE,aluSrc1E, aluSrc2E, zeroToAluE,aluControlE);
 					
 	//Control Condicional
-	condLogic conditional(clk, rst, flagUpdateE,zeroFlag, PCSrcE1, regWriteE1,memWriteE1, opcodeE, PCSrcE, regWriteE,
+	condLogic conditional(clk, rst, flagUpdateE,zeroFlag,negative1, PCSrcE1, regWriteE1,memWriteE1, opcodeE, PCSrcE, regWriteE,
 								memWriteE, postAluMuxSel);
 	
 	
 	//Seleccionando las entradas para las ALUs.
 		
 	//ALU1//B
-	mux2a1 #(8) muxALU1B(srcB[7:0], 8'b0, zeroToAluE, srcAlu_B1);
+	muxAlu1B #(8) muxALU1B(srcB[7:0], 8'b0, zeroToAluE,opcodeE, srcAlu_B1);
 	
 	//A																	 
 	mux2a1 #(8) muxALU1A(srcA[7:0], extImmE[7:0], aluSrcE, srcAlu_A1);
@@ -82,20 +82,24 @@ module datapath(input logic clk, rst,stallF,flagUpdate, regWrite,regWriteW, aluS
 	mux2a1 #(8) muxALU6A(srcA[47:40], 8'b0, aluSrc1E, srcAlu_A6);
 	
 	
+	
+	//mux para cambiar las entradas de la ALU a-b por b-a 
+	//Solo para hacer subbi
+	muxAluParams #(8) muxALU1Params(srcAlu_A1,srcAlu_B1, opcodeE,srcAlu_A1_1,srcAlu_B1_1);
 	//Creando las 6 instancias de ALU
 	
 	//El parametro debe ir en 7 no 8.
-	alu #(7) alu_instance1(srcAlu_A1,srcAlu_B1,aluControlE,1'b0,aluResult1, zero1);
+	alu #(7) alu_instance1(srcAlu_A1_1,srcAlu_B1_1,aluControlE,1'b0,aluResult1, zero1, negative1);
 	
-	alu #(7) alu_instance2(srcAlu_A2,srcAlu_B2,aluControlE,1'b0,aluResult2, zero2);
+	alu #(7) alu_instance2(srcAlu_A2,srcAlu_B2,aluControlE,1'b0,aluResult2, zero2, negative2);
 	
-	alu #(7) alu_instance3(srcAlu_A3,srcAlu_B3,aluControlE,1'b0,aluResult3, zero3);
+	alu #(7) alu_instance3(srcAlu_A3,srcAlu_B3,aluControlE,1'b0,aluResult3, zero3, negative3);
 	
-	alu #(7) alu_instance4(srcAlu_A4,srcAlu_B4,aluControlE,1'b0,aluResult4, zero4);
+	alu #(7) alu_instance4(srcAlu_A4,srcAlu_B4,aluControlE,1'b0,aluResult4, zero4, negative4);
 	
-	alu #(7) alu_instance5(srcAlu_A5,srcAlu_B5,aluControlE,1'b0,aluResult5, zero5);
+	alu #(7) alu_instance5(srcAlu_A5,srcAlu_B5,aluControlE,1'b0,aluResult5, zero5, negative5);
 	
-	alu #(7) alu_instance6(srcAlu_A6,srcAlu_B6,aluControlE,1'b0,aluResult6, zero6);
+	alu #(7) alu_instance6(srcAlu_A6,srcAlu_B6,aluControlE,1'b0,aluResult6, zero6, negative6);
 	
 	//Concatenating the result of the 6 ALUs
 	assign aluResult= {aluResult6, aluResult5, aluResult4, aluResult3, aluResult2, aluResult1};
