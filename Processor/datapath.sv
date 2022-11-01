@@ -45,7 +45,7 @@ module datapath(input logic clk, rst,stallF,flagUpdate, regWrite,regWriteW, aluS
 	//Seleccionando las entradas para las ALUs.
 		
 	//ALU1//B
-	muxAlu1B #(8) muxALU1B(srcB[7:0], 8'b0, zeroToAluE,opcodeE, srcAlu_B1);
+	muxAlu1B #(8) muxALU1B(srcB[7:0], 8'b0, srcA[7:0], zeroToAluE,opcodeE, srcAlu_B1);
 	
 	//A																	 
 	mux2a1 #(8) muxALU1A(srcA[7:0], extImmE[7:0], aluSrcE, srcAlu_A1);

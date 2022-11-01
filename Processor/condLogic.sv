@@ -20,10 +20,10 @@ module condLogic(input logic clk, reset, flagUpdate,aluZero,negative1, PCS, regW
 	assign branchCond= (opcodeE==4'b1001) ? BCNDcondition : 1'b0;///Not equal
 	//If there is a branch set PCSrc to 1, else to branchCond result
 	//It is not possible to make a branch to memory position zero
-	assign branchType= (opcodeE==4'b1000) ? ~zeroFlag : branchCond; 
+	assign branchType= (opcodeE==4'b1000) ? 1'b1 : branchCond; 
 	assign PCSrc = PCS & branchType;
-	
-	assign postAluMuxSel= (opcodeE==4'b1001) ? PCSrc : 1'b0;
+														//Este or es un apaga fuegos, debería servir sin eso   | opcodeE==4'b1000
+	assign postAluMuxSel= (opcodeE==4'b1001 ) ? PCSrc : 1'b0;
 	
 	
 endmodule 

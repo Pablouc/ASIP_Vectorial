@@ -1,18 +1,18 @@
-Analysis & Elaboration Status : Successful - Sun Oct 30 22:08:16 2022
+Analysis & Synthesis Status : Successful - Mon Oct 31 23:25:58 2022
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Alu
-Top-level Entity Name : processor_tb
+Top-level Entity Name : processor
 Family : Cyclone IV GX
-Total logic elements : N/A until Partition Merge
-    Total combinational functions : N/A until Partition Merge
-    Dedicated logic registers : N/A until Partition Merge
-Total registers : N/A until Partition Merge
-Total pins : N/A until Partition Merge
-Total virtual pins : N/A until Partition Merge
-Total memory bits : N/A until Partition Merge
-Embedded Multiplier 9-bit elements : N/A until Partition Merge
-Total GXB Receiver Channel PCS : N/A until Partition Merge
-Total GXB Receiver Channel PMA : N/A until Partition Merge
-Total GXB Transmitter Channel PCS : N/A until Partition Merge
-Total GXB Transmitter Channel PMA : N/A until Partition Merge
-Total PLLs : N/A until Partition Merge
+Total logic elements : 3,430
+    Total combinational functions : 3,300
+    Dedicated logic registers : 957
+Total registers : 957
+Total pins : 159
+Total virtual pins : 0
+Total memory bits : 4,718,592
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0

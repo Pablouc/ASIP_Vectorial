@@ -16,7 +16,7 @@ module processor(input logic clk, reset, input[3:0] btn, output logic[15:0]  pc,
 	RAM memdata(A[15:0],~clk, memWD, memWriteM, rdMemData);
 	
 	assign data={outputAddrForTxt, outputDataForTxt};
-	assign enable= (outputAddrForTxt!=15'b0) & (outputDataForTxt!=23'b0) ? 1'b1 : 1'b0;
+	assign enable= (outputAddrForTxt!=16'b0) & (outputDataForTxt!=48'b0) ? 1'b1 : 1'b0;
 	
 	
 

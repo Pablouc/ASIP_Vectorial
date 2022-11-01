@@ -29,8 +29,8 @@ module asip(input logic clk, rst , input logic [23:0]  inst,input logic[47:0] rd
 	//Asignando el dato a escribir en la ram
 	assign memWD=WD;
 	
-	assign outputDataForTxt= memWriteM ? memWD : 47|'b0;
-	assign outputAddrForTxt= memWD ? A : 15'b0;
+	assign outputDataForTxt= memWriteM ? memWD : 48'b0;
+	assign outputAddrForTxt= memWD ? A : 16'b0;
 	
 	
 	registerAMem regMem(rdMemData, A, WA3M, clk,rst, PCSrcM, regWriteM,memToRegM, 

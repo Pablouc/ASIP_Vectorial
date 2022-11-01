@@ -25,22 +25,22 @@ btn<=4'b0001;
 #1
 rst<=0;
 
-// f = $fopen("output.txt","w");
-//
-//    @(negedge rst); //Wait for reset to be released
-//    @(posedge clk);   //Wait for fisrt clock out of reset
-//	
-//    for (i = 0; i<1200000; i=i+1) begin
-//      @(posedge clk);
-//      //memory[i] <= data;
-//      //$display("LFSR %b", data);
-//		
-//		if(enable) $fwrite(f,"%b\n",   data);
-//    end
-//
-//    $fclose(f);  
-//
-//    $finish;
+ f = $fopen("output.txt","w");
+
+    @(negedge rst); //Wait for reset to be released
+    @(posedge clk);   //Wait for fisrt clock out of reset
+	
+    for (i = 0; i<1200000; i=i+1) begin
+      @(posedge clk);
+      //memory[i] <= data;
+      //$display("LFSR %b", data);
+		
+		if(enable) $fwrite(f,"%b\n",   data);
+    end
+
+    $fclose(f);  
+
+    $finish;
 
 
 //---------------------Pruebas de integración---------------------

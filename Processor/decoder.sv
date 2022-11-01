@@ -73,7 +73,7 @@ case(opcode)
 	regWrite=1'b0;
 	aluSrc= 1'b1;
 	PCSrc=1'b0;
-	flagUpdate=1'b0;
+	flagUpdate=1'b1;
 	memToReg=1'b0;
 	//extensión de signo[11:0]
 	immSrc=1'b1;
