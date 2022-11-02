@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Mon Oct 31 23:25:58 2022
+Analysis & Synthesis Status : Successful - Tue Nov 01 20:00:36 2022
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Alu
 Top-level Entity Name : processor
 Family : Cyclone IV GX
-Total logic elements : 3,430
-    Total combinational functions : 3,300
-    Dedicated logic registers : 957
-Total registers : 957
+Total logic elements : 3,731
+    Total combinational functions : 3,601
+    Dedicated logic registers : 1,053
+Total registers : 1053
 Total pins : 159
 Total virtual pins : 0
 Total memory bits : 4,718,592
