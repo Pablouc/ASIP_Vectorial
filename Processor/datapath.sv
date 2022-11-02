@@ -1,7 +1,7 @@
 module datapath(input logic clk, rst,stallF,flagUpdate, regWrite,regWriteW, aluSrc, PCSrc, immSrc,memToReg, memWrite,
 					ra2Src,ra1Src,PCSrcW, aluSrc1, aluSrc2, zeroToAlu,
 					input logic [1:0]  aluControl,input logic [23:0] inst,input logic [3:0] WA3W,
-					input logic [47:0] resultW,output logic [47:0] srcB,postAluResult, output logic [15:0] PC, output logic zeroFlag,negative1, 
+					input logic [47:0] resultW, input logic [7:0] color,output logic [47:0] srcB,postAluResult, output logic [15:0] PC, output logic zeroFlag,negative1, 
 					regWriteE, PCSrcE,memToRegE, memWriteE, output logic [3:0] WA3E );
 	
 	logic zero1, zero2, zero3, zero4, zero5, zero6, negative2, negative3, negative4, negative5, negative6;
@@ -14,7 +14,7 @@ module datapath(input logic clk, rst,stallF,flagUpdate, regWrite,regWriteW, aluS
 	logic aluSrcE,ci,  PCSrcE1, regWriteE1, memWriteE1,postAluMuxSel, flagUpdateE, aluSrc1E, aluSrc2E, zeroToAluE;
 	
 	//llamando al register file
-	regFile regfile(clk, PC, regWriteW, ra1,ra2,WA3W,resultW, rd1, rd2);
+	regFile regfile(clk, PC, regWriteW, ra1,ra2,WA3W,resultW, color,rd1, rd2);
 	
 	
 	// next PC logic

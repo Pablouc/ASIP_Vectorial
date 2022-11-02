@@ -1,4 +1,4 @@
-module asip(input logic clk, rst , input logic [23:0]  inst,input logic[47:0] rdMemData, output logic[15:0] PC,
+module asip(input logic clk, rst , input logic [23:0]  inst,input logic[47:0] rdMemData, input[7:0] color, output logic[15:0] PC,
 				output logic [47:0] resultW, memWD, outputDataForTxt, A, output logic [15:0] outputAddrForTxt, output logic memWriteM, stallF);
 				
 	logic aluSrc, immSrc, aluZero,negative, memToReg, ra2Src,ra1Src, regWriteE, PCSrcE,memToRegE, 
@@ -18,7 +18,7 @@ module asip(input logic clk, rst , input logic [23:0]  inst,input logic[47:0] rd
 	
 	datapath datapath(clk,rst,stallF,flagUpdate,regW,regWriteW,aluSrc, PCS,immSrc,memToReg,memWriteSrc,ra2Src,ra1Src,PCSrcW,
 							aluSrc1, aluSrc2, zeroToAlu,
-							aluControl,inst,WA3W,resultW,srcB, postAluRes,PC, aluZero,negative, regWriteE, PCSrcE,
+							aluControl,inst,WA3W,resultW, color,srcB, postAluRes,PC, aluZero,negative, regWriteE, PCSrcE,
 							memToRegE, memWriteE, WA3E);
 	
 	

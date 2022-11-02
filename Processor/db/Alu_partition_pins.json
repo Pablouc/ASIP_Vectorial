@@ -622,6 +622,38 @@
 				{
 					"name" : "reset",
 					"strict" : false
+				},
+				{
+					"name" : "color[6]",
+					"strict" : false
+				},
+				{
+					"name" : "color[7]",
+					"strict" : false
+				},
+				{
+					"name" : "color[0]",
+					"strict" : false
+				},
+				{
+					"name" : "color[1]",
+					"strict" : false
+				},
+				{
+					"name" : "color[4]",
+					"strict" : false
+				},
+				{
+					"name" : "color[5]",
+					"strict" : false
+				},
+				{
+					"name" : "color[2]",
+					"strict" : false
+				},
+				{
+					"name" : "color[3]",
+					"strict" : false
 				}
 			]
 		}

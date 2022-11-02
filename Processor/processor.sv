@@ -1,4 +1,4 @@
-module processor(input logic clk, reset, input[3:0] btn, output logic[15:0]  pc, output logic [23:0]inst,output logic [47:0] result, 
+module processor(input logic clk, reset, input[7:0] color, input orientation, output logic[15:0]  pc, output logic [23:0]inst,output logic [47:0] result, 
 						output logic [63:0] data, output logic enable);
 
 	
@@ -11,7 +11,7 @@ module processor(input logic clk, reset, input[3:0] btn, output logic[15:0]  pc,
 
 	registerAROM reg1(inst,clk, reset, stallF,instrD);
 	
-	asip myProcessor(clk,reset, instrD,rdMemData, pc,result,memWD,outputDataForTxt, A,outputAddrForTxt,memWriteM, stallF);
+	asip myProcessor(clk,reset, instrD,rdMemData, color, pc,result,memWD,outputDataForTxt, A,outputAddrForTxt,memWriteM, stallF);
 	 
 	RAM memdata(A[15:0],~clk, memWD, memWriteM, rdMemData);
 	

@@ -8,7 +8,8 @@ logic [23:0]inst;
 logic [47:0] result;
 logic [63:0] data;
 logic [39:0] memory [11:0];
-logic [3:0] btn;
+logic btn;
+logic [7:0] color;
 integer f, i;
 
 
@@ -20,7 +21,6 @@ always #1 clk=~clk;
 initial begin
 clk<=0;
 rst<=1;
-btn<=4'b0001;
 
 #1
 rst<=0;
@@ -46,6 +46,37 @@ rst<=0;
 //---------------------Pruebas de integración---------------------
 
 //Instrucción ADDI R6, R6, 96    1111 0110 0110 0000 0110 0000
+
+#10
+btn<=1;
+if(btn== 1) $display("Imagen leida en diagonal");
+else if (btn!= 1) $display("Imagen leida incorrectamente");
+
+#10
+btn<=0;
+if(btn== 1) $display("Imagen leida en diagonal");
+else if (btn!= 0) $display("Imagen leida incorrectamente");
+
+#10
+color<=8'b00010111;
+if(color== 8'b00010111) $display("Color correcto: R 0% G 25% B 25% T 75%");
+else if (color != 8'b00010111) $display("Color ingresado incorrecto");
+
+#10
+color<=8'b11100001;
+if(color== 8'b11100001) $display("Color correcto: R 75% G 50% B 0% T 25%");
+else if (color != 8'b11100001) $display("Color ingresado incorrecto");
+
+#10
+color<=8'b00000001;
+if(color== 8'b00000001) $display("Color correcto: R 0% G 0% B 0% T 25%");
+else if (color != 8'b00000001) $display("Color ingresado incorrecto");
+
+#10
+color<=8'b01111001;
+if(color== 8'b01111001) $display("Color correcto: R 25% G 75% B 75% T 25%");
+else if (color != 8'b01111001) $display("Color ingresado incorrecto");
+
 
 #22
 if(result == 24'b01100000) $display("resultado correcto de ADDI R6, R6, 96");

@@ -1,20 +1,20 @@
-Fitter Status : Successful - Sun May 15 15:12:50 2022
-Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Fitter Status : Successful - Tue Nov 01 20:26:02 2022
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : Alu
 Top-level Entity Name : processor
-Family : Cyclone V
-Device : 5CSEMA5F31C6
+Family : Cyclone IV GX
+Device : EP4CGX150DF27C8
 Timing Models : Final
-Logic utilization (in ALMs) : 1,056 / 32,070 ( 3 % )
-Total registers : 508
-Total pins : 83 / 457 ( 18 % )
+Total logic elements : 3,691 / 149,760 ( 2 % )
+    Total combinational functions : 3,595 / 149,760 ( 2 % )
+    Dedicated logic registers : 1,053 / 149,760 ( < 1 % )
+Total registers : 1053
+Total pins : 164 / 426 ( 38 % )
 Total virtual pins : 0
-Total block memory bits : 3,145,728 / 4,065,280 ( 77 % )
-Total RAM Blocks : 384 / 397 ( 97 % )
-Total DSP Blocks : 0 / 87 ( 0 % )
-Total HSSI RX PCSs : 0
-Total HSSI PMA RX Deserializers : 0
-Total HSSI TX PCSs : 0
-Total HSSI PMA TX Serializers : 0
-Total PLLs : 0 / 6 ( 0 % )
-Total DLLs : 0 / 4 ( 0 % )
+Total memory bits : 4,718,592 / 6,635,520 ( 71 % )
+Embedded Multiplier 9-bit elements : 0 / 720 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 8 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
+Total PLLs : 0 / 8 ( 0 % )
